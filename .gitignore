@@ -1,0 +1,7 @@
+.DS_Store
+Archive
+config.codekit
+temp
+*.psd
+*.esproj
+node_modules/

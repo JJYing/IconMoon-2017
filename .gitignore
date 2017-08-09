@@ -5,3 +5,5 @@ temp
 *.psd
 *.esproj
 node_modules/
+source
+builds

@@ -9,7 +9,7 @@ http://jjying.com*/
 }
 body{
 	font-size: 62.5%;
-	font-family: 'eureka-sans', 'Pingfang SC', sans-serif;
+	font-family: 'Quattrocento Sans', 'Pingfang SC', sans-serif;
 	text-align: center;
 	color: #666;
 	line-height: 1;
@@ -57,37 +57,59 @@ li{
 .ml2,.mr2{bottom: none;top: 0;}
 
 h1, .tagline{
-	font-family: 'eureka-sans', sans-serif;
+	font-family: 'Fedra Sans Bold', 'eureka-sans', sans-serif;
+	font-weight: 400;
+	font-variant-alternates: stylistic(1);
 }
 /*~Header*/
 header{
 	font-size: 1rem;
-	padding: 3.5em 0;
+	padding: 10em 0;
 	text-align: left;
 }
+.logo {
+	height: 5rem;
+	text-align: center;
+	margin: 1rem 0;
+}
+
+.logo img {
+	max-height: 5rem;
+	margin: 0 auto;
+	opacity: .75;
+}
+
 .tagline{
 	display: block;
 	color: #444;
-	font-size: 3.5rem;
-	line-height: 1.2;
-	text-align: center;
-	letter-spacing: -0.02em;
-	font-weight: 700;
+	font-size: 4rem;
+	line-height: 1.0;
+	text-align: left;
+	font-weight: 400;
+	font-family: 'Fedra Sans Bold', 'eureka-sans', sans-serif;
 }
 .tagline strong{
-	color: #666;
-	font-weight: inherit;
+	font-weight: 400;
+	font-family: 'Fedra Sans Bold', 'eureka-sans', sans-serif;
 }
 .desc{
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color: #ccc;
 	font-weight: 300;
-	letter-spacing: -0.01em;
 	line-height: 1.3;
 	display: block;
-	padding: .5em 0 0;
-	text-align: center;
+	padding: .5em 0 2em;
+	text-align: left;
 }
+/*.desc:before {
+	width: 140px;
+	height: 4px;
+	background: #0af;
+	display: block;
+	content: "";
+	margin: .5em 0 1em;
+}*/
+
 nav{
 	text-align: right;
 	position: fixed;
@@ -148,19 +170,22 @@ main{
 	padding-top: 7rem;
 }
 h1{
-	font-size: 3rem;
+	font-size: 2.25rem;
 	color: #fff;
-	font-weight: 700;
+	font-weight: 400;
 	z-index: 999;
 	padding: 0 .5em 0 0;
 	line-height: 1;
 	text-align: left;
 	transition: color .15s ease-in 0s;
 	position: relative;
+	font-family: fedra Sans bold;
+	
 }
 h1 i{
-	font-weight: 300;
+	font-weight: 400;
 	font-style: normal;
+	font-family: fedra Sans light;
 }
 h1:before{
 	content: "＊";
@@ -174,12 +199,12 @@ h1:before{
 .item-desc{
 	color: #fff;
 	display: none;
-	font-size: 1rem;
+	font-size: .875rem;
 	text-align: left;
 	padding: 0 0 0 .15em;
 	width: 75%;
 	margin: 1em 0 1em;
-	line-height: 1.45;
+	line-height: 1.78;
 	position: relative;
 	font-weight: 100;
 }
@@ -381,6 +406,33 @@ main img{
 .s-pre .item-btn{
 	color: #434240;
 }
+.s-post .inner-item{
+	background: #333;
+}
+.s-anyway-tab .inner-item{
+	background: #ffe324;
+}
+.s-anyway-tab-img{
+	position: absolute;
+	top: 0%;
+	height: 100%;
+	right: 0;
+	transform: translateX(3rem);
+	opacity: 0;
+}
+.s-anyway-tab-img.in-view{
+	transform: translateX(0);
+	opacity: 1;
+}
+.s-anyway-tab h1{
+	color: #222;
+}
+.s-anyway-tab .item-desc{
+	color: #222;
+}
+.s-anyway-tab .item-btn{
+	color: #434240;
+}
 .s-slab .inner-item{
 	background: #f5f5f5;
 }
@@ -505,15 +557,14 @@ main img{
 }
 .about .item-desc{
 	text-align: left;
-	font-size: 1rem;
+	font-size: .875rem;
 	font-weight: 400;
 	display: block;
-	width: 54%;
+	width: 62%;
 	float: right;
 	padding: 0;
 	margin: .1rem 0 0;
-	color: rgba(0, 0, 0, .89);
-	text-align: justify;
+	color: rgba(0, 0, 0, .7);
 }
 .about .item-desc div{
 	/*background: rgba(0, 0, 0, .02);*/
@@ -543,7 +594,7 @@ main img{
 footer{
 	color: rgba(255, 255, 255, .55);
 	color: #333;
-	font-size: 1rem;
+	font-size: .875rem;
 	font-weight: 300;
 }
 .inner-footer{

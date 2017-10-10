@@ -17,13 +17,12 @@
 	<link rel="stylesheet" href="https://fonts.typotheque.com/WF-030004-010011.css" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 	
-	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/in-view.min.js"></script>
 	
 </head>
 <body>
 	<header>
-		
 		
 		<section class="autowidth tagline">I'm JJ Ying,</section>
 		<section class="autowidth desc">based in Shanghai, China,</section>
@@ -41,10 +40,10 @@
 			<div class="logo"><img src="images/logo.png"/></div>
 			<div class="header-name">JJ Ying's Portfolio</div>
 			<ul class="">
-				<li><a href="#">Work</a></li>
-				<li><a href="#">About</a></li>
-				<li class="nav-blog"><a href="#">Blog</a></li>
-				<li><a href="#">Podcast</a></li>
+				<li><a href="#works">Works</a></li>
+				<li><a href="#about">About</a></li>
+				<li class="nav-blog"><a href="http://IconMoon.com/blog2/" target="_blank">Blog</a></li>
+				<li><a href="http://Anyway.FM" target="_blank">Podcast</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -52,7 +51,7 @@
 	<main>
 		<div class="inner inner-content">
 			
-			<article class="item s-anyway-tab">
+			<article class="item s-anyway-tab" id="works">
 				<div class="inner-item">
 					<div class="item-main autowidth">
 						<h1 class="item-text">Anyway.Tab
@@ -142,6 +141,9 @@
 						<section class="autowidth tagline">I've been Blogging for 10+ Years</section>
 						<section class="autowidth desc">but just too little to be called full-stack. 😝</section>
 						
+						<section class="autowidth tagline">And Recently I Hosted a Podcast.</section>
+						<section class="autowidth desc">but just too little to be called full-stack. 😝</section>
+						
 					</header>
 					
 			<article class="item s-anyway">
@@ -186,10 +188,8 @@
 				<div class="inner-item">
 					<div class="item-main autowidth">
 						<h1 class="item-text">IconMoon <i>Blog</i></h1>
-						
-						<div class="item-desc">I've been writing blog for more than a decade, through the whole blogger life, I grew up from a simple pixel-pusher to a sophiscated....dady.</div>
-						
-						<div class="item-btns"><a class="item-btn" href="https://github.com/JJYing/Podcast-RSS-Editor" target="_blank">Open sourced on GitHub ></a> <a class="item-btn" href="https://www.behance.net/gallery/40528175/Podcast-RSS-Editor" target="_blank">Details on Behance ></a></div>
+	
+						<div class="item-btns"><a class="item-btn" href="https://github.com/JJYing/Podcast-RSS-Editor" target="_blank">Open sourced on GitHub</a> <a class="item-btn" href="https://www.behance.net/gallery/40528175/Podcast-RSS-Editor" target="_blank">Details on Behance</a></div>
 					</div>
 				</div>
 			</article>
@@ -198,7 +198,7 @@
 				<div class="inner-item">
 					<div class="item-main autowidth">
 						<h1 class="item-text">Anyway.Post <br /><i>E-mail Newsletter</i></h1>
-						<div class="item-btns"><a class="item-btn" href="https://github.com/JJYing/Podcast-RSS-Editor" target="_blank">Open sourced on GitHub ></a> <a class="item-btn" href="https://www.behance.net/gallery/40528175/Podcast-RSS-Editor" target="_blank">Details on Behance ></a></div>
+						<div class="item-btns"><a class="item-btn" href="https://github.com/JJYing/Podcast-RSS-Editor" target="_blank">Open sourced on GitHub</a> <a class="item-btn" href="https://www.behance.net/gallery/40528175/Podcast-RSS-Editor" target="_blank">Details on Behance</a></div>
 					</div>
 				</div>
 			</article>
@@ -292,8 +292,9 @@
 					</div>
 				</div>
 			</article>-->
-					
-			<article class="item about">
+			
+			
+			<article class="item about" id="about">
 				<div class="inner-item">
 					<div class="item-main autowidth">
 						<h1 class="item-text"><i>About </i>JJ Ying</h1>
@@ -351,22 +352,11 @@
 			
 		</div>
 	</main>
-	
-<!--	<div class="mask-wrapper">
-		<div class="mask mt"></div>
-		
-		<div class="mask mb"></div>
-		
-		<div class="mask mv ml"></div>
-		
-		<div class="mask mv mr"></div>
-		
-		<div class="mask mv ml2"></div>
-		
-		<div class="mask mv mr2"></div>
-	</div>-->
+
 
 <script type="text/javascript">
+	
+	//~inView Animations
 	inView('.ani-2')
 		.on('enter',
 			el => {
@@ -408,6 +398,44 @@ inView('.ani-slow-1')
 	el => {
 el.className += " in-view";
 });
+	
+	
+	//~Smooth Scroll
+	
+	$('a[href*="#"]')
+
+	  .not('[href="#"]')
+	  .not('[href="#0"]')
+	  .click(function(event) {
+
+	    if (
+	      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+	      && 
+	      location.hostname == this.hostname
+	    ) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+	      if (target.length) {
+
+	        event.preventDefault();
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000, function() {
+
+	          var $target = $(target);
+	          $target.focus();
+	          if ($target.is(":focus")) { 
+	            return false;
+	          } else {
+	            $target.attr('tabindex','-1'); 
+	            $target.focus(); 
+	          };
+	        });
+	      }
+	    }
+	  });
 	
 	</script>
 		

@@ -4,6 +4,8 @@
     "gulp-rename": "*",
     "gulp-watch": "*",
     "gulp-batch-replace": "*",
+    "gulp-html-minifier": "*",
+    "gulp-batch-replace": "*",
     "gulp-htmlmin": "*"
   }
 }

@@ -7,3 +7,8 @@ temp
 node_modules/
 source
 builds
+assets/*.woff
+assets/*.woff2
+assets/*.ttf
+assets/*.eot
+assets/*.svg

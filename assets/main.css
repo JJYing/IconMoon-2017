@@ -19,39 +19,39 @@ body{
 }
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/apercu/apercu-bold.eot');
-    src: url('assets/apercu/apercu-bold.eot?#iefix') format('embedded-opentype'),
-         url('assets/apercu/apercu-bold.woff') format('woff'),
-         url('assets/apercu/apercu-bold.woff2') format('woff2'),
-         url('assets/apercu/apercu-bold.ttf') format('truetype');
+    src: url('apercu/apercu-bold.eot');
+    src: url('apercu/apercu-bold.eot?#iefix') format('embedded-opentype'),
+         url('apercu/apercu-bold.woff') format('woff'),
+         url('apercu/apercu-bold.woff2') format('woff2'),
+         url('apercu/apercu-bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/apercu/apercu-light.eot');
-    src: url('assets/apercu/apercu-light.eot?#iefix') format('embedded-opentype'),
-         url('assets/apercu/apercu-light.woff') format('woff'),
-         url('assets/apercu/apercu-light.woff2') format('woff2'),
-         url('assets/apercu/apercu-light.ttf') format('truetype');
+    src: url('apercu/apercu-light.eot');
+    src: url('apercu/apercu-light.eot?#iefix') format('embedded-opentype'),
+         url('apercu/apercu-light.woff') format('woff'),
+         url('apercu/apercu-light.woff2') format('woff2'),
+         url('apercu/apercu-light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/apercu/apercu-regular.eot');
-    src: url('assets/apercu/apercu-regular.eot?#iefix') format('embedded-opentype'),
-         url('assets/apercu/apercu-regular.woff') format('woff'),
-         url('assets/apercu/apercu-regular.woff2') format('woff2'),
-         url('assets/apercu/apercu-regular.ttf') format('truetype');
+    src: url('apercu/apercu-regular.eot');
+    src: url('apercu/apercu-regular.eot?#iefix') format('embedded-opentype'),
+         url('apercu/apercu-regular.woff') format('woff'),
+         url('apercu/apercu-regular.woff2') format('woff2'),
+         url('apercu/apercu-regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 @font-face
 {
   font-family: "Fedra Sans";
-  src: url('assets/fedra/WF-030004-010059-000025.eot');
-  src: url('assets/fedra/WF-030004-010059-000025.eot?#iefix') format('embedded-opentype'), url('assets/fedra/WF-030004-010059-000025.woff') format('woff'), url('assets/fedra/WF-030004-010059-000025.ttf') format('truetype');
+  src: url('fedra/WF-030004-010059-000025.eot');
+  src: url('fedra/WF-030004-010059-000025.eot?#iefix') format('embedded-opentype'), url('fedra/WF-030004-010059-000025.woff') format('woff'), url('fedra/WF-030004-010059-000025.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -59,8 +59,8 @@ body{
 @font-face
 {
   font-family: "Fedra Sans";
-  src: url('assets/fedra/WF-030004-010059-000002.eot');
-  src: url('assets/fedra/WF-030004-010059-000002.eot?#iefix') format('embedded-opentype'), url('assets/fedra/WF-030004-010059-000002.woff') format('woff'), url('assets/fedra/WF-030004-010059-000002.ttf') format('truetype');
+  src: url('fedra/WF-030004-010059-000002.eot');
+  src: url('fedra/WF-030004-010059-000002.eot?#iefix') format('embedded-opentype'), url('fedra/WF-030004-010059-000002.woff') format('woff'), url('fedra/WF-030004-010059-000002.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
 }

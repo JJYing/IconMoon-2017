@@ -8,7 +8,7 @@ http://jjying.com*/
 }
 body{
 	font-size: 62.5%;
-	font-family: apercu trial, Karla, 'Quattrocento Sans', 'Pingfang SC', sans-serif;
+	font-family: Apercu, sans-serif;
 	text-align: center;
 	color: #666;
 	line-height: 1;
@@ -16,6 +16,53 @@ body{
 	overflow-x: hidden;
 	-webkit-tap-highlight-color: transparent;
 	background: #fff;
+}
+@font-face {
+    font-family: 'Apercu';
+    src: url('assets/apercu-bold.eot');
+    src: url('assets/apercu-bold.eot?#iefix') format('embedded-opentype'),
+         url('assets/apercu-bold.woff') format('woff'),
+         url('assets/apercu-bold.woff2') format('woff2'),
+         url('assets/apercu-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Apercu';
+    src: url('assets/apercu-light.eot');
+    src: url('assets/apercu-light.eot?#iefix') format('embedded-opentype'),
+         url('assets/apercu-light.woff') format('woff'),
+         url('assets/apercu-light.woff2') format('woff2'),
+         url('assets/apercu-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Apercu';
+    src: url('assets/apercu-regular.eot');
+    src: url('assets/apercu-regular.eot?#iefix') format('embedded-opentype'),
+         url('assets/apercu-regular.woff') format('woff'),
+         url('assets/apercu-regular.woff2') format('woff2'),
+         url('assets/apercu-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face
+{
+  font-family: "Fedra Sans";
+  src: url('assets/WF-030004-010059-000025.eot');
+  src: url('assets/WF-030004-010059-000025.eot?#iefix') format('embedded-opentype'), url('assets/WF-030004-010059-000025.woff') format('woff'), url('assets/WF-030004-010059-000025.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family: "Fedra Sans";
+  src: url('assets/WF-030004-010059-000002.eot');
+  src: url('assets/WF-030004-010059-000002.eot?#iefix') format('embedded-opentype'), url('assets/WF-030004-010059-000002.woff') format('woff'), url('assets/WF-030004-010059-000002.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
 }
 a{
 	color: #666;
@@ -57,7 +104,7 @@ li{
 .ml2,.mr2{bottom: none;top: 0;}
 
 h1, .tagline, .header-name strong{
-	font-family: 'Fedra Sans Bold', 'eureka-sans', sans-serif;
+	font-family: 'Fedra Sans', sans-serif;
 	font-weight: 400;
 	font-variant-alternates: stylistic(1);
 }
@@ -179,12 +226,7 @@ header{
 	font-size: 3.6rem;
 	line-height: 1.0;
 	text-align: left;
-	font-weight: 400;
-	font-family: 'Fedra Sans Bold', 'eureka-sans', sans-serif;
-}
-.tagline strong{
-	font-weight: 400;
-	font-family: 'Fedra Sans Bold', 'eureka-sans', sans-serif;
+	font-weight: 700;
 }
 .desc{
 	font-size: 1.25rem;
@@ -247,20 +289,20 @@ main{
 h1{
 	font-size: 2.25rem;
 	color: #fff;
-	font-weight: 400;
+	font-weight: 100;
 	z-index: 999;
 	padding: 0 .5em 0 0;
 	line-height: 1.2;
 	text-align: left;
 	transition: color .15s cubic-bezier(0.4,0,0,1);
 	position: relative;
-	font-family: fedra Sans bold;
+	font-family: 'Fedra Sans';
 	
 }
-h1 i{
-	font-weight: 400;
+h1 strong{
+	font-weight: 700;
 	font-style: normal;
-	font-family: fedra Sans light;
+	font-family: 'Fedra Sans';
 }
 h1:before{
 	content: "＊";
@@ -608,7 +650,6 @@ main img{
 }
 /*~About*/
 .about{
-	background: #333 url('images/me.jpg') center center;
 	background: #fff;
 	background-attachment: fixed;
 }

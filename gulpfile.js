@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     plugins = gulpLoadPlugins();
  
 var cdnUrl = [
-	[ '../blog-2016.css', 'http://anyway-web.b0.upaiyun.com/iconmoon/blog-2016.min.css' ]
+	[ 'assets/', 'http://anyway-web.b0.upaiyun.com/iconmoon/' ]
 ];
  
 gulp.task('watch', function() {
@@ -15,7 +15,7 @@ gulp.task('default', function() {
 
 	gulp.src('blog2/template/iconmoon-2016/elements.php')
 		.pipe(plugins.batchReplace(cdnUrl))
-		.pipe(gulp.dest('build'));
+		.pipe(gulp.dest('builds'));
 		
 	gulp.src('*.css')
 		.pipe(plugins.cleanCss({compatibility: 'ie8'}))

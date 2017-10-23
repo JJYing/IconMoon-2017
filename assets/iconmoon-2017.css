@@ -19,39 +19,39 @@ body{
 }
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/apercu-bold.eot');
-    src: url('assets/apercu-bold.eot?#iefix') format('embedded-opentype'),
-         url('assets/apercu-bold.woff') format('woff'),
-         url('assets/apercu-bold.woff2') format('woff2'),
-         url('assets/apercu-bold.ttf') format('truetype');
+    src: url('assets/apercu/apercu-bold.eot');
+    src: url('assets/apercu/apercu-bold.eot?#iefix') format('embedded-opentype'),
+         url('assets/apercu/apercu-bold.woff') format('woff'),
+         url('assets/apercu/apercu-bold.woff2') format('woff2'),
+         url('assets/apercu/apercu-bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/apercu-light.eot');
-    src: url('assets/apercu-light.eot?#iefix') format('embedded-opentype'),
-         url('assets/apercu-light.woff') format('woff'),
-         url('assets/apercu-light.woff2') format('woff2'),
-         url('assets/apercu-light.ttf') format('truetype');
+    src: url('assets/apercu/apercu-light.eot');
+    src: url('assets/apercu/apercu-light.eot?#iefix') format('embedded-opentype'),
+         url('assets/apercu/apercu-light.woff') format('woff'),
+         url('assets/apercu/apercu-light.woff2') format('woff2'),
+         url('assets/apercu/apercu-light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/apercu-regular.eot');
-    src: url('assets/apercu-regular.eot?#iefix') format('embedded-opentype'),
-         url('assets/apercu-regular.woff') format('woff'),
-         url('assets/apercu-regular.woff2') format('woff2'),
-         url('assets/apercu-regular.ttf') format('truetype');
+    src: url('assets/apercu/apercu-regular.eot');
+    src: url('assets/apercu/apercu-regular.eot?#iefix') format('embedded-opentype'),
+         url('assets/apercu/apercu-regular.woff') format('woff'),
+         url('assets/apercu/apercu-regular.woff2') format('woff2'),
+         url('assets/apercu/apercu-regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 @font-face
 {
   font-family: "Fedra Sans";
-  src: url('assets/WF-030004-010059-000025.eot');
-  src: url('assets/WF-030004-010059-000025.eot?#iefix') format('embedded-opentype'), url('assets/WF-030004-010059-000025.woff') format('woff'), url('assets/WF-030004-010059-000025.ttf') format('truetype');
+  src: url('assets/fedra/WF-030004-010059-000025.eot');
+  src: url('assets/fedra/WF-030004-010059-000025.eot?#iefix') format('embedded-opentype'), url('assets/fedra/WF-030004-010059-000025.woff') format('woff'), url('assets/fedra/WF-030004-010059-000025.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -59,8 +59,8 @@ body{
 @font-face
 {
   font-family: "Fedra Sans";
-  src: url('assets/WF-030004-010059-000002.eot');
-  src: url('assets/WF-030004-010059-000002.eot?#iefix') format('embedded-opentype'), url('assets/WF-030004-010059-000002.woff') format('woff'), url('assets/WF-030004-010059-000002.ttf') format('truetype');
+  src: url('assets/fedra/WF-030004-010059-000002.eot');
+  src: url('assets/fedra/WF-030004-010059-000002.eot?#iefix') format('embedded-opentype'), url('assets/fedra/WF-030004-010059-000002.woff') format('woff'), url('assets/fedra/WF-030004-010059-000002.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
 }
@@ -105,7 +105,7 @@ li{
 
 h1, .tagline, .header-name strong{
 	font-family: 'Fedra Sans', sans-serif;
-	font-weight: 400;
+	font-weight: 700;
 	font-variant-alternates: stylistic(1);
 }
 /*~Header*/
@@ -193,7 +193,7 @@ nav li{
 	display: inline-block;
 }
 nav li a{
-	padding: .5em .5em;
+	padding: 1.3em .5em;
 	display: inline-block;
 	font-size: 0.75rem;	
 	height: 1rem;
@@ -201,14 +201,6 @@ nav li a{
 }
 .header-nav a:hover {
 	font-weight: 400;
-}
-
-.nav-blog:after {
-	content: "图月志";
-	display: inline-block;
-	width: 0;
-	height: 1.5rem;
-	overflow: hidden;
 }
 .header-nav a:hover .nav-blog:after {
 	width: 3rem;
@@ -223,7 +215,7 @@ header{
 .tagline{
 	display: block;
 	color: #444;
-	font-size: 3.6rem;
+	font-size: 3rem;
 	line-height: 1.0;
 	text-align: left;
 	font-weight: 700;

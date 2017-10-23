@@ -13,15 +13,12 @@ gulp.task('watch', function() {
  
 gulp.task('default', function() {
 
-	gulp.src('blog2/template/iconmoon-2016/elements.php')
+	gulp.src('*.html')
 		.pipe(plugins.batchReplace(cdnUrl))
 		.pipe(gulp.dest('builds'));
 		
 	gulp.src('*.css')
 		.pipe(plugins.cleanCss({compatibility: 'ie8'}))
-		.pipe(plugins.rename({
-		      suffix: '.min'
-		    }))
-		.pipe(gulp.dest('build'));     
+		.pipe(gulp.dest('builds'));     
 });
 

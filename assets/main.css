@@ -830,6 +830,10 @@ footer{
 	.item-main{
 		padding-top: 4rem;
 	}
+	.half {
+		float: none;
+	}
+	
 	.half .inner-item {
 		height: auto;
 	}
@@ -866,7 +870,10 @@ footer{
 	.clover-img-0 {
 		margin: 2em 0 3em;
 	}
-
+	.half-l .inner-item,
+	.half-r .inner-item{
+		margin: 1rem 1rem 0;
+	}
 	.item h1{
 		text-align: center;
 	}
@@ -896,9 +903,18 @@ footer{
 	
 	.item-btns{
 		margin: 0 auto 3em;
-		
-		
 		float: none;
 	}
-	
+	.about .item-main{
+		padding: 2rem 0 0;
+	}
+	.about-4 .item-main{
+		padding: 2rem 0 3rem;
+	}
+/*	.about-1 .item-main{
+		padding-top: 4rem;
+	}
+	.about .item-main{
+		padding-bottom: 3rem;
+	}*/
 }

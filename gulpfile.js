@@ -3,9 +3,9 @@ var gulp = require('gulp'),
     plugins = gulpLoadPlugins();
 
 var cdnUrl = [
-	[ 'assets/jquery-3.1.1.min.js', 'http://anw.red/js/jquery-3.1.1.min.js' ],
-	[ 'assets/in-view.min.js', 'http://anw.red/js/in-view.min.js' ],
-	[ 'assets/', 'http://anw.red/iconmoon-2017/' ]
+	[ 'assets/jquery-3.1.1.min.js', 'http://s.anw.red/js/jquery-3.1.1.min.js' ],
+	[ 'assets/in-view.min.js', 'http://s.anw.red/js/in-view.min.js' ],
+	[ 'assets/', 'http://s.anw.red/iconmoon-2017/' ]
 ];
 
 gulp.task('watch', function() {

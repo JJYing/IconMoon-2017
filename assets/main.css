@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*Designed by JJ Ying
 http://jjying.com*/
 *{
@@ -23,41 +24,38 @@ body{
 	margin: 0 auto;
 }
 @font-face {
-    font-family: 'Apercu';
-    src: url('apercu/apercu-bold.eot');
-    src: url('apercu/apercu-bold.eot?#iefix') format('embedded-opentype'),
-         url('apercu/apercu-bold.woff') format('woff'),
-         url('apercu/apercu-bold.woff2') format('woff2'),
-         url('apercu/apercu-bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'Apercu';
+  src: url('apercu/apercu-bold.eot');
+  src: url('apercu/apercu-bold.eot?#iefix') format('embedded-opentype'),
+   url('apercu/apercu-bold.woff') format('woff'),
+   url('apercu/apercu-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Apercu';
-    src: url('apercu/apercu-light.eot');
-    src: url('apercu/apercu-light.eot?#iefix') format('embedded-opentype'),
-         url('apercu/apercu-light.woff') format('woff'),
-         url('apercu/apercu-light.woff2') format('woff2'),
-         url('apercu/apercu-light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: block;
+  font-family: 'Apercu';
+  src: url('apercu/apercu-light.eot');
+  src: url('apercu/apercu-light.eot?#iefix') format('embedded-opentype'),
+   url('apercu/apercu-light.woff') format('woff'),
+   url('apercu/apercu-light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: block;
 }
 @font-face {
-    font-family: 'Apercu';
-    src: url('apercu/apercu-regular.eot');
-    src: url('apercu/apercu-regular.eot?#iefix') format('embedded-opentype'),
-         url('apercu/apercu-regular.woff') format('woff'),
-         url('apercu/apercu-regular.woff2') format('woff2'),
-         url('apercu/apercu-regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'Apercu';
+  src: url('apercu/apercu-regular.eot');
+  src: url('apercu/apercu-regular.eot?#iefix') format('embedded-opentype'),
+   url('apercu/apercu-regular.woff') format('woff'),
+   url('apercu/apercu-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face
 {
   font-family: "Fedra Sans";
   src: url('fedra/WF-030004-010059-000025.eot');
-  src: url('fedra/WF-030004-010059-000025.eot?#iefix') format('embedded-opentype'), url('fedra/WF-030004-010059-000025.woff') format('woff'), url('fedra/WF-030004-010059-000025.ttf') format('truetype');
+  src: url('fedra/WF-030004-010059-000025.eot?#iefix') format('embedded-opentype'), url('fedra/WF-030004-010059-000025.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: block;
@@ -66,7 +64,7 @@ body{
 {
   font-family: "Fedra Sans";
   src: url('fedra/WF-030004-010059-000002.eot');
-  src: url('fedra/WF-030004-010059-000002.eot?#iefix') format('embedded-opentype'), url('fedra/WF-030004-010059-000002.woff') format('woff'), url('fedra/WF-030004-010059-000002.ttf') format('truetype');
+  src: url('fedra/WF-030004-010059-000002.eot?#iefix') format('embedded-opentype'), url('fedra/WF-030004-010059-000002.woff') format('woff');
   font-weight: 100;
   font-style: normal;
   font-display: block;
@@ -550,6 +548,53 @@ main img{
 .s-post h1{
 	color: #333;
 }
+/* ~Better Shadow */
+.s-better-shadow .inner-item{
+	background: #f5f5f5;
+}
+.s-better-shadow-img{
+	position: absolute;
+	bottom: 0;
+	height: 100%;
+	right: 10%;
+	transform: translate(3rem,0);
+	opacity: 0;
+}
+.s-better-shadow-img.in-view{
+	transform: translate(0,0);
+	opacity: 1;
+}
+.s-better-shadow h1{
+	color: #404d5c;
+}
+.s-better-shadow .item-desc,
+.s-better-shadow .item-btn{
+	color: #939aa3;
+}
+/* ~Anyway Web */
+.s-anyway-web .inner-item{
+	background: #ec1138;
+}
+.s-anyway-web-img{
+	position: absolute;
+	bottom: 0;
+	height: 100%;
+	right: 0;
+	transform: translate(3rem,0);
+	opacity: 0;
+}
+.s-anyway-web-img.in-view{
+	transform: translate(0,0);
+	opacity: 1;
+}
+.s-anyway-web h1{
+	color: #fff;
+}
+.s-anyway-web .item-desc,
+.s-anyway-web .item-btn{
+	color: #fff;
+}
+/* ~Anyway Tab */
 .s-anyway-tab .inner-item{
 	background: #ffe324;
 }
@@ -830,7 +875,6 @@ footer{
 	.half {
 		float: none;
 	}
-
 	.half .inner-item {
 		height: auto;
 	}
@@ -853,7 +897,9 @@ footer{
 		width: auto;
 		max-width: 90%;
 	}
+	.s-anyway-web-img,
 	.s-anyway-tab-img,
+	.s-better-shadow-img,
 	.s-clover .item-bg {
 		max-width: 100%;
 		position: static;

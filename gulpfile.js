@@ -11,7 +11,7 @@ var cdnUrl = [
 gulp.task('watch', function() {
 	gulp.watch(['*','*/*'], ['default']);
  });
- 
+
 
 gulp.task('default', function() {
 

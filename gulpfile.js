@@ -17,10 +17,9 @@ gulp.task('default', function() {
 
 	gulp.src('*.html')
 		.pipe(plugins.batchReplace(cdnUrl))
-		.pipe(plugins.htmlMinifier({
+    .pipe(plugins.htmlmin({
 			collapseWhitespace: true,
-			removeComments: true,
-			minifyJS: true
+			removeComments: true
 		}))
 		.pipe(gulp.dest('builds'));
 

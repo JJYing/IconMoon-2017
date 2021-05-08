@@ -325,6 +325,7 @@ h1:before{
 	line-height: 1.35;
 	position: relative;
 	font-weight: 400;
+	z-index: 999;	
 }
 .item-tags {
 	padding: 0 ;
@@ -338,7 +339,6 @@ h1:before{
 	font-size: .8rem;
 	cursor: pointer;
 	font-weight: 400;
-	text-decoration: none;
 	margin: 0 .4em 0 -.5em;
 	transition: all .2s cubic-bezier(0.4,0,0,1);
 	text-decoration: none;

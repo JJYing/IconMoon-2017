@@ -13,7 +13,7 @@ gulp.task('watch', function() {
  });
 
 
-gulp.task('default', function() {
+gulp.task('default', function(done) {
 
 	gulp.src('*.html')
 		.pipe(plugins.batchReplace(cdnUrl))
@@ -26,4 +26,7 @@ gulp.task('default', function() {
 	gulp.src('assets/*.css')
 		.pipe(plugins.cleanCss({compatibility: 'ie8'}))
 		.pipe(gulp.dest('builds'));
+
+    console.log("终于好了");
+    done();
 });

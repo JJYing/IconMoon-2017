@@ -12,3 +12,4 @@ builds
 *.ttf
 *.eot
 *.svg
+dev/

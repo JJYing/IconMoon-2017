@@ -380,17 +380,17 @@ article .inner-item{
   background: var(--item-bg);
 }
 
-.s-analytttics{
-  --item-text1: #bbb;
+.s-nur{
+  --item-text1: #ddd;
   --item-text2: rgba(255,255,255,.5);
   --item-bg: #1f1f1f;
 }
-.s-analytttics-img{
-	position: absolute;
-	bottom: 0;
-	width: 50%;
-	right: 0;
+.s-nur .inner-item{
+  background: #1f1f1f url('../assets/nur-bg.jpg');
+  background-size: cover;
+  background-position: center center;
 }
+
 .s-name{
   --item-text1: #fff;
   --item-text2: #d0c8f0;

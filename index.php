@@ -115,7 +115,8 @@ echo
 							<div class="item-tags">UI Design / Development / Website</div>
 
 							<div class="item-btns"><a class="item-btn" href="https://Anyway.FM/tab/" target="_blank">Launch site</a>
-								<a class="item-btn" href="https://github.com/Anyway-Design/Anyway-Tab" target="_blank">Open sourced on GitHub</a></div>
+								<a class="item-btn" href="https://github.com/Anyway-Design/Anyway-Tab" target="_blank">Open sourced on GitHub</a>
+              </div>
 						</div>
 
 					</div>
@@ -124,7 +125,7 @@ echo
 				</div>
 			</article>
 
-      <article class="item s-pre">
+      <article class="item s-nur">
 				<div class="inner-item">
 					<div class="item-main autowidth">
 						<h1 class="item-text"><strong>Nürburgring</strong> Map</h1>
@@ -132,14 +133,14 @@ echo
 						<div class="item-desc">
 							<div class="item-tags">Web App Design / Development</div>
 							<div class="item-btns">
-								<a class="item-btn" href="https://www.behance.net/gallery/40528175/Podcast-RSS-Editor" target="_blank">More details on Behance</a>
-								<a class="item-btn" href="https://github.com/JJYing/Podcast-RSS-Editor" target="_blank">Open sourced on GitHub</a>
+                <a class="item-btn" href="https://jjying.com/nurburgring/" target="_blank">Launch site</a>
+								<a class="item-btn" href="https://github.com/JJYing/Nurburgring-Map/" target="_blank">Open sourced on GitHub</a>
 							</div>
 						</div>
 
 					</div>
 
-					<img src="{$imgDir}/pre-bg.jpg" class="s-pre-img mobile-full-width" />
+					<img src="{$imgDir}/nur.png" class="s-pre-img mobile-full-width" />
 				</div>
 			</article>
 
@@ -162,26 +163,6 @@ echo
 				</div>
 			</article>      
 
-			<article class="item s-better-shadow">
-				<div class="inner-item">
-					<div class="item-main autowidth">
-						<h1 class="item-text"><strong>Better Shadow</strong>
-						<br />for Sketch</h1>
-
-						<div class="item-desc">
-							<div class="item-tags">Plug-in Development</div>
-
-							<div class="item-btns">
-								<a class="item-btn" href="https://github.com/JJYing/Sketch-Better-Shadow" target="_blank">Open sourced on GitHub</a>
-							</div>
-						</div>
-
-					</div>
-
-					<img src="{$imgDir}/better.gif" class="ani-1 s-better-shadow-img mobile-full-width" />
-				</div>
-			</article>
-
 			<article class="item s-name">
 				<div class="inner-item">
 					<div class="item-main autowidth">
@@ -201,24 +182,24 @@ echo
 				</div>
 			</article>
 
-			<article class="item s-analytttics">
+			<article class="item s-better-shadow">
 				<div class="inner-item">
 					<div class="item-main autowidth">
-						<h1 class="item-text"><strong>Analytttics</strong>
-						<br />Dribbble Activities Ratings</h1>
+						<h1 class="item-text"><strong>Better Shadow</strong>
+						<br />for Sketch</h1>
 
 						<div class="item-desc">
-							<div class="item-tags">Web Design / Development</div>
+							<div class="item-tags">Plug-in Development</div>
 
-							<div class="item-btns"><a class="item-btn" href="http://anyway.design/analytttics/" target="_blank">Launch site</a>
-								<a class="item-btn" href="https://github.com/JJYing/Analytttics" target="_blank">Open sourced on GitHub</a></div>
+							<div class="item-btns">
+								<a class="item-btn" href="https://github.com/JJYing/Sketch-Better-Shadow" target="_blank">Open sourced on GitHub</a>
+							</div>
 						</div>
-
 					</div>
 
-					<img src="{$imgDir}/analytttics.png" class="s-analytttics-img mobile-full-width" />
+					<img src="{$imgDir}/better.gif" class="ani-1 s-better-shadow-img mobile-full-width" />
 				</div>
-			</article>
+			</article>      
 
 			<article class="item s-aw2016  last-item">
 				<div class="inner-item">

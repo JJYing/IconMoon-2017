@@ -201,6 +201,26 @@ echo
 				</div>
 			</article>      
 
+			<article class="item s-clover">
+				<div class="inner-item">
+
+					<div class="item-main autowidth">
+						<h1 class="item-text"><strong>Clover Sans</strong><br /> Typeface Design</h1>
+						<div class="item-desc">
+							<div class="item-btns">
+								Coming soon...
+							</div>
+						</div>
+
+					</div>
+
+					<img src="{$imgDir}/clover-sans.jpg" class="item-bg clover-img-0 mobile-full-width" />
+					<img src="{$imgDir}/clover-sans-2.png" class="item-bg clover-img-1 mobile-full-width" />
+					<img src="{$imgDir}/clover-sans-3.png" class="item-bg clover-img-2 mobile-full-width" />
+
+				</div>
+			</article>
+
 			<article class="item s-aw2016  last-item">
 				<div class="inner-item">
 					<div class="item-bg"></div>
@@ -225,27 +245,7 @@ echo
 					<img src="{$imgDir}/aw2016-logo.gif" class="s-aw2016-logo mobile-full-width" />
 
 				</div>
-			</article>
-
-			<article class="item s-clover">
-				<div class="inner-item">
-
-					<div class="item-main autowidth">
-						<h1 class="item-text"><strong>Clover Sans</strong><br /> Typeface Design</h1>
-						<div class="item-desc">
-							<div class="item-btns">
-								Coming soon...
-							</div>
-						</div>
-
-					</div>
-
-					<img src="{$imgDir}/clover-sans.jpg" class="item-bg clover-img-0 mobile-full-width" />
-					<img src="{$imgDir}/clover-sans-2.png" class="item-bg clover-img-1 mobile-full-width" />
-					<img src="{$imgDir}/clover-sans-3.png" class="item-bg clover-img-2 mobile-full-width" />
-
-				</div>
-			</article>
+			</article>      
 
 
 			<header>
